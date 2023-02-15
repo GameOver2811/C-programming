@@ -1,0 +1,30 @@
+// c-program for checking a leap year
+#include<stdio.h>
+#include<conio.h>
+void
+main ()
+{
+  int year;
+  printf
+    ("Write the year u want to check wheather it is a leap year or not\n\t");
+  scanf ("%d", &year);
+  if ((year % 400) == 0)
+    {
+      printf ("Given year is a leap year\n");
+
+    }
+  else if ((year % 100) == 0)
+    {
+      printf ("Givem year is not a leap year\n");
+    }
+  else if ((year % 4) == 0)
+    {
+      printf ("Given year is a leap year\n\t");
+    }
+
+  else
+    {
+      printf ("Given is not a leap year\n");
+    }
+  getch ();
+}

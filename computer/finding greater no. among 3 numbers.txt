@@ -1,0 +1,25 @@
+// c- program for finding a greater no. among given three numbers
+#include<stdio.h>
+#include<conio.h>
+void
+main ()
+{
+  int a, b, c;
+  printf ("Enter three numbers \n\n\t");
+  scanf ("%d%d%d", &a, &b, &c);
+  if (a > b)
+    {
+      if (b > c)
+	{
+	  printf ("First no. is a greater no. iin all given numbers\n");
+	}
+    }
+  else if (b > c)
+    {
+      printf ("secoond no. is greater\n");
+
+    }
+  else
+    printf ("third no, is greater");
+  getch ();
+}

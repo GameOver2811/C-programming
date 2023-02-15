@@ -1,0 +1,27 @@
+// c-program for finding roots of quadratic equation
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+int
+main ()
+{
+  float a, b, c, d, root1, root2;
+  printf ("Enter the value of A,B,C\n\t");
+  scanf ("%f%f%f", &a, &b, &c);
+  d = b * b - 4 * a * c;
+  root1 = -b + (sqrt (d)) / 2 * a;
+  root2 = -b - (sqrt (d)) / 2 * a;
+  if (d < 0)
+    {
+      printf ("Roots are _Imaginary\n");
+    }
+  else
+    {
+      printf ("roots are real \n");
+
+    }
+  printf ("Value of roots are:: \n%f\n%f", root1,root2);
+  getch ();
+  return 0;
+
+}

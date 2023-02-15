@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int n,t,table;
+    printf("Enter a number for which u have to find a table\n");
+    scanf("%d",&n);
+     printf("Your desired table will be\n");
+    for(t=0;t<11;t++)
+    {
+        table=n*t;
+       
+        printf("%d*%d=%d\n",n,t,table);
+    }
+    return 0;
+}
